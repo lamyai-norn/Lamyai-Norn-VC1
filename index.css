@@ -1,0 +1,61 @@
+body{
+    padding:0;
+    margin:0;
+    background: url('https://blog.depositphotos.com/wp-content/uploads/2019/04/Depositphotos_209179682_m-2015kk.jpg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    font-family:sans-serif;
+}
+
+nav{
+    background: rgba(0, 0, 0, 0.384);
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    padding:10px;
+    margin:0;
+
+}
+li{
+  padding:10px;
+}
+li a{
+    text-decoration:none;
+    font-size:20px;
+    color:white;
+    font-family:sans-serif;
+    text-transform:uppercase;
+}
+li a:hover{
+    text-decoration:underline;
+}
+.container{
+    height: 100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.164);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main {
+    text-align: center;
+   
+}
+h1{
+    color:white;
+}
+input[type=button]{
+    padding:10px;
+    width:100px;
+    background: green;
+    color:white;
+    font-size:20px;
+    outline:none;
+    cursor:pointer;
+}
