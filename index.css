@@ -6,35 +6,30 @@ body{
     background-repeat: no-repeat;
     background-position: center -100px;
     font-family:sans-serif;
+    opacity:0.8;
 }
 
-nav{
-    background: rgba(0, 0, 0, 0.384);
-}
+
 nav ul{
     list-style:none;
     display:flex;
     padding:10px;
     margin:0;
+    justify-content:flex-end;
 
 }
 li{
   padding:10px;
 }
 li a{
+    padding:20px;
     text-decoration:none;
-    font-size:20px;
+    font-size:15px;
     color:white;
     font-family:sans-serif;
     text-transform:uppercase;
 }
-li a:hover{
-    text-decoration:underline;
-}
 .container{
-    height: 100%;
-    width:100%;
-    background: rgba(0, 0, 0, 0.164);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -48,14 +43,16 @@ li a:hover{
    
 }
 h1{
-    color:white;
+    font-family:'Times New Roman';
+    font-size:40px;
 }
 input[type=button]{
     padding:10px;
     width:100px;
-    background: green;
-    color:white;
+    background: rgb(9, 78, 9);
+    color:black;
     font-size:20px;
     outline:none;
     cursor:pointer;
 }
+
