@@ -2,23 +2,19 @@ body{
     margin:0;
     padding:0;
     font-family:sans-serif;
-
-    
-}
-.container{
     background: url('https://i2.wp.com/blog.lilyandval.com/wp-content/uploads/2017/01/hobby.png?resize=1000%2C498');
     background-size:cover;
-    opacity:0.8;
+   
+    
 }
+
 nav ul{
     list-style:none;
     display:flex;
     padding:10px;
     margin:0;
     justify-content: flex-end;
-    background:rgba(0, 0, 0, 0.411);
-  
-
+    background:rgba(0, 0, 0, 0.568);
 }
 
 .logo{
@@ -39,42 +35,35 @@ li a{
     font-family:sans-serif;
     text-transform:uppercase;
 }
+li a:hover{
+    text-decoration:underline;
+}
 .container{
     height:93vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    background: rgba(0, 0, 0, 0.568);
 }
-.main{
-    background: #99cc00;
-    height:250px;
-    width:830px;
-}
+
 .login{
     padding:10px;
-    background:#ff99cc;
-    height:650px;
+    background:white;
+    height:290px;
     width:650px;
-    position:absolute;
-    left:32%;
 }
-input[type=text],input[type=number]{
-    width:100%;
-    padding:10px;
-    box-sizing: border-box;
-    margin-top:8px;
-    background: rgb(247, 239, 239);
+.content{
+   display:flex;
 }
-input[type=submit]{
-    width:100px;
-    padding:8px;
-    margin-top:8px;
-    background: #000;
-    color:white;
-    cursor:pointer;
-    font-size:18px;
-   
+.col1{
+    width:50%;
+    background: white;
 }
+.col2{
+    width:50%;
+    background: white;
+}
+
 textarea{
     margin-top:8px;
     background: rgb(247, 239, 239);
@@ -87,5 +76,40 @@ h1{
 }
 label{
     font-size:19px;
+}
+input[type=text],input[type=number],input[type=email]{
+    width:95%;
+    padding:10px;
+    box-sizing: border-box;
+    margin-top:10px;
+    background: rgb(248, 241, 241);
+}
+input[type=submit]{
+    margin-top:10px;
+    padding:10px;
+    width:100px;
+    background: green;
+    font-size:20px;
+    border:none;
+    cursor: pointer;
+    color:white;
+}
+@media(max-width:600px){
+    .login{
+        height:300px;
+        width:300px;
+        position:absolute;
+        left:32%;
+    }
+    li a{
+        font-size:10px;
+        padding:10px;
+    }
+    .logo{
+        font-size:10px;
+    }
+}
+.maps{
+   margin-left:10px;
 }
 
