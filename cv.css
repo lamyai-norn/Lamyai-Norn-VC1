@@ -183,5 +183,15 @@ p{
    footer{
        width:100%;
    }
+   ul{
+       display:none;
+   }
+   li a{
+       font-size:10px;
+       padding:8px;
+   }
+   .logo{
+       font-size:20px;
+   }
 }
 
