@@ -3,16 +3,23 @@ body{
     padding:0;
     font-family:sans-serif;
 }
-nav{
-    background: rgba(0, 0, 0, 0.384);
-}
 nav ul{
     list-style:none;
     display:flex;
     padding:10px;
     margin:0;
-    justify-content:flex-end;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.329);
+  
 
+}
+
+.logo{
+    width:80%;
+    justify-content: flex-start;
+    font-family:"Baskerville Old Face";
+    color:white;
+    font-size:30px;
 }
 li{
   padding:10px;
@@ -20,11 +27,8 @@ li{
 li a{
     padding:20px;
     text-decoration:none;
-    font-size:15px;
+    font-size:18px;
     color:white;
     font-family:sans-serif;
     text-transform:uppercase;
-}
-li a:hover{
-    text-decoration: underline;
 }

@@ -1,0 +1,187 @@
+body{
+    padding:0;
+    margin:0;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    padding:10px;
+    margin:0;
+    justify-content: flex-end;
+    background: black;
+    opacity:0.7;
+  
+
+}
+
+.logo{
+    width:80%;
+    justify-content: flex-start;
+    font-family:"Baskerville Old Face";
+    color:white;
+    font-size:30px;
+}
+li{
+  padding:10px;
+}
+li a{
+    padding:20px;
+    text-decoration:none;
+    font-size:18px;
+    color:white;
+    font-family:sans-serif;
+    text-transform:uppercase;
+}
+.container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-areas:
+    "nav nav content content"
+    "content1 content1 content2 content3"
+    "content4 content4 content4 content4"
+    "content5 content5 content6 content6"
+    "footer footer footer footer";
+}
+.nav{
+    background:url('https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80'); 
+    grid-area:nav;
+    height:60vh;
+    background-position-y: 19%;
+    background-size:cover;
+
+
+}
+.content{
+ background:rgba(78, 110, 170, 0.267);
+ grid-area:content;
+ display:flex;
+ justify-content:center;
+ align-items: center;
+}
+.btn {
+    
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius:25px;
+    text-align:center;
+    outline:none;
+  }
+  .download{
+      text-align:center;
+  }
+  .btn:hover{
+      background: rgba(0, 0, 255, 0.377);
+  }
+.icon{
+    margin-top:20px;
+}
+h1{
+    font-family:"Imprint MT Shadow";
+    text-align:center;
+}
+.content1{
+    background: white;
+    grid-area:content1;
+    padding:10px;
+}
+.content2{
+    padding:10px;
+    background: white;
+    grid-area:content2;
+}
+.content3{
+    padding:10px;
+    background: white;
+    grid-area:content3;
+}
+.content4{
+    padding:10px;
+    background: white;
+    grid-area:content4;
+}
+.border1{
+    border:1px solid dddddd;
+    width:80%;
+    height:14px;
+    background:  rgb(233, 218, 218);
+}
+.blue1{
+    width:80%;
+    height:14px;
+    background: blue;
+}
+.border2{
+    border:1px solid dddddd;
+    width:80%;
+    height:14px;
+    background:  rgb(233, 218, 218);
+}
+.blue2{
+    width:60%;
+    height:14px;
+    background: #0000ff;
+}
+.border3{
+    border:1px solid dddddd;
+    width:80%;
+    height:14px;
+    background: rgb(233, 218, 218);
+}
+.blue3{
+    width:90%;
+    height:14px;
+    background: blue;
+}
+.content5{
+    padding:10px;
+    background:white;
+    grid-area:content5
+}
+.content6{
+    padding:10px;
+    background: white;
+    grid-area:content6;
+}
+.green{
+    background: green;
+}
+footer{
+    padding:10px;
+    background: white;
+    grid-area:footer;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+}
+@media(max-width:600px){
+   .container{
+       display:grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-areas:
+       "nav nav"
+       "content content"
+       "content1 content1"
+       "content2 content3"
+       "content4 content4"
+       "content5 content5"
+       "content6 content6"
+       "footer footer";
+   }
+   .nav,
+   .content,
+   .content1,
+   .content2,
+   .content3,
+   .content4,
+   .content5,
+   .content6,
+   footer{
+       width:100%;
+   }
+}
+
