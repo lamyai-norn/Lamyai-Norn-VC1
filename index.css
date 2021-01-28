@@ -79,5 +79,7 @@ input[type=button]{
         font-size:20px;
     }
 }
-
+footer{
+    background: #000;
+}
 
