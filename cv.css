@@ -1,6 +1,7 @@
 body{
     padding:0;
     margin:0;
+    font-family: 'PT Sans', sans-serif;
 }
 nav ul{
     list-style:none;
@@ -29,26 +30,23 @@ li a{
     text-decoration:none;
     font-size:18px;
     color:white;
-    font-family:sans-serif;
     text-transform:uppercase;
 }
 .container{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas:
     "nav nav content content"
-    "content1 content1 content2 content3"
-    "content4 content4 content4 content4"
+    "content1 content1 content1 content1"
+    "content2 content2 content2 content2"
+    "content3 content3 content4 content4"
     "content5 content5 content6 content6"
     "footer footer footer footer";
 }
 .nav{
-    background:url('https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80'); 
     grid-area:nav;
     height:60vh;
-    background-position-y: 19%;
-    background-size:cover;
-
+background: rgb(173, 197, 207);
 
 }
 .content{
@@ -84,9 +82,17 @@ h1{
     text-align:center;
 }
 .content1{
-    background: white;
+    background:rgb(173, 197, 207);
     grid-area:content1;
     padding:10px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+}
+.about-me{
+    width:60%;
+    height:15vh;
+    
 }
 .content2{
     padding:10px;
@@ -155,44 +161,33 @@ footer{
     grid-area:footer;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
     font-size:20px;
 }
 @media(max-width:600px){
-   .container{
-       display:grid;
-       grid-template-columns: 1fr 1fr;
-       grid-template-areas:
-       "nav nav"
-       "content content"
-       "content1 content1"
-       "content2 content3"
-       "content4 content4"
-       "content5 content5"
-       "content6 content6"
-       "footer footer";
+    .container{
+       display:flex;
+       flex-direction:column;
+       flex-wrap:wrap;
+    }
+    .nav{
+        width:100%;
+    
+    }
+    img{
+        width:100%;
    }
-   .nav,
-   .content,
-   .content1,
-   .content2,
-   .content3,
-   .content4,
-   .content5,
-   .content6,
-   footer{
+   .content{
        width:100%;
    }
-   ul{
-       display:none;
+   .content1{
+       width:100%;
    }
-   li a{
-       font-size:10px;
-       padding:8px;
-   }
-   .logo{
-       font-size:20px;
-   }
+    .about-me{
+        height:60vh;
+    }
+    .content5{
+        width:50%;
+    }
 }
 
 

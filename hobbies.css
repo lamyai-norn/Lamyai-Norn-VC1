@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:0;
-    font-family:sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 nav ul{
     list-style:none;
@@ -29,10 +29,18 @@ li a{
     text-decoration:none;
     font-size:18px;
     color:white;
-    font-family:sans-serif;
     text-transform:uppercase;
 }
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    row-gap:30px;
+    column-gap:30px;
+
+}
 .main{
+    width:100%;
     padding:10px;
     height:500px;
     background:url('https://mongooseagency.com/files/3415/9620/1413/Return_of_Sports.jpg');
@@ -42,38 +50,56 @@ li a{
     justify-content: center;
     align-items:center;
 }
-.title{
+.content1{
     padding:10px;
-    height:200px;
-    color:white;
-    background: #00000034;
+   width:24%;
+  
+}
+.content2{
+    width:24%;
+    padding:10px;
+}
+.content3{
+    width:24%;
+    padding:10px;
+}
+.content4{
+   width:24%;
+   padding:10px;
+
 }
 h1{
     color:white;
 }
+@media(max-width:600px){
+    .container{
+        display:flex;
+        flex-direction:column;
+    }
+    .content1{
+        width:100%;
+    }
+    .content2{
+        width:100%;
+    }
+    .content3{
+        width:100%;
+    }
+    .box{
+        width:100%;
+    }
+    img{
+        width:100%;
+    }
+    li a{
+        padding:10px;
+        font-size:13px;
+    }
+    .about-me{
+        width:100%;
+    }
 
-.content1{
-    margin-top:20px;
-    display:flex;
-    justify-content:center;
-    
-   
 }
-.box{
-    width:24%;
-    height:300px;
-}
-.content2{
-    display:flex;
-    justify-content:center;
-    
-}
-.picture1{
-    background: url('https://www.usnews.com/dims4/USNEWS/b91c5c1/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fcf%2F04%2F6bb88ec746daa8031d1ed8e9ba16%2Fresizes%2F1500%2F170530-kidssoccer-stock.jpg');
-    background-size:cover;
-}
-.picture2{
-    background: url('https://cdn.theathletic.com/app/uploads/2020/09/25135043/GettyImages-1197492510-scaled-e1601056338926-1024x682.jpg');
-    background-size:cover;
-}
+
+
 
