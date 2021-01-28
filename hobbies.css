@@ -32,3 +32,48 @@ li a{
     font-family:sans-serif;
     text-transform:uppercase;
 }
+.main{
+    padding:10px;
+    height:500px;
+    background:url('https://mongooseagency.com/files/3415/9620/1413/Return_of_Sports.jpg');
+    background-size:cover;
+    background-position:center 10%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.title{
+    padding:10px;
+    height:200px;
+    color:white;
+    background: #00000034;
+}
+h1{
+    color:white;
+}
+
+.content1{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    
+   
+}
+.box{
+    width:24%;
+    height:300px;
+}
+.content2{
+    display:flex;
+    justify-content:center;
+    
+}
+.picture1{
+    background: url('https://www.usnews.com/dims4/USNEWS/b91c5c1/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fcf%2F04%2F6bb88ec746daa8031d1ed8e9ba16%2Fresizes%2F1500%2F170530-kidssoccer-stock.jpg');
+    background-size:cover;
+}
+.picture2{
+    background: url('https://www.usnews.com/dims4/USNEWS/b91c5c1/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fcf%2F04%2F6bb88ec746daa8031d1ed8e9ba16%2Fresizes%2F1500%2F170530-kidssoccer-stock.jpg');
+    background-size:cover;
+}
+
