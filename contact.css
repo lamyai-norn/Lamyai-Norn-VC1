@@ -49,7 +49,7 @@ li a:hover{
 .login{
     padding:10px;
     background:white;
-    height:290px;
+    height:470px;
     width:650px;
 }
 .content{
@@ -67,6 +67,14 @@ li a:hover{
 textarea{
     margin-top:8px;
     background: rgb(247, 239, 239);
+}
+.maps{
+    background:white;
+    height:485px;
+    width:650px;
+}
+a{
+    margin-left:20px;
 }
 h1{
     text-align:center;
@@ -94,22 +102,52 @@ input[type=submit]{
     cursor: pointer;
     color:white;
 }
-@media(max-width:600px){
-    .login{
-        height:300px;
-        width:300px;
-        position:absolute;
-        left:32%;
-    }
-    li a{
-        font-size:10px;
-        padding:10px;
-    }
-    .logo{
-        font-size:10px;
-    }
-}
+
 .maps{
    margin-left:10px;
 }
-
+@media(max-width:600px){
+    .container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    .login{
+        width:80%;
+        height:145vh;
+    }
+    .maps{
+        width:83%;
+        margin-top:10px;
+    }
+    li a{
+       padding:10px;
+       font-size:10px;
+    }
+    .logo{
+        width:100%;
+        font-size:20px;
+    }
+   textarea{
+       width:96%;
+   }
+   iframe{
+       width:100%;
+   }
+   .content{
+       display:flex;
+       flex-wrap:wrap;
+   }
+   .col1{
+       width:100%;
+   }
+   .col2{
+       width:100%;
+   }
+   h1{
+       background: white;
+       margin:0;
+     
+   }
+}

@@ -78,7 +78,6 @@ background: rgb(173, 197, 207);
     margin-top:20px;
 }
 h1{
-    font-family:"Imprint MT Shadow";
     text-align:center;
 }
 .content1{
@@ -165,9 +164,10 @@ p{
 }
 @media(max-width:600px){
     .container{
-       display:flex;
-       flex-direction:column;
-       flex-wrap:wrap;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+
     }
     .nav{
         width:100%;
@@ -188,6 +188,23 @@ p{
     .content5{
         width:50%;
     }
+    li a{
+        padding:10px;
+        font-size:15px;
+    }
+    .content2{
+       width:100%
+    }
+    .border1{
+        width:50%;
+    }
+    .border2{
+        width:50%;
+    }
+    .border3{
+        width:50%;
+    }
+   
 }
 
 
