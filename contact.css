@@ -2,8 +2,8 @@ body{
     margin:0;
     padding:0;
     font-family: 'PT Sans', sans-serif;
-    background: url('https://i2.wp.com/blog.lilyandval.com/wp-content/uploads/2017/01/hobby.png?resize=1000%2C498');
-    background-size:cover;
+    background:rgb(173, 197, 207);
+
     
     
 }
@@ -18,6 +18,7 @@ nav ul{
 }
 
 .logo{
+    padding:10px;
     width:80%;
     justify-content: flex-start;
     font-family:"Baskerville Old Face";
@@ -30,7 +31,7 @@ li{
 li a{
     padding:20px;
     text-decoration:none;
-    font-size:18px;
+    font-size:20px;
     color:white;
     font-family:sans-serif;
     text-transform:uppercase;
@@ -39,115 +40,82 @@ li a:hover{
     text-decoration:underline;
 }
 .container{
-    height:93vh;
+    height:65vh;
     display:flex;
-    justify-content:center;
-    align-items:center;
-    background: rgba(0, 0, 0, 0.568);
-}
-
-.login{
-    padding:10px;
-    background:white;
-    height:470px;
-    width:650px;
-}
-.content{
-   display:flex;
+    width:60%;
+    margin:auto;
+    column-gap:10px;
 }
 .col1{
-    width:50%;
     background: white;
+    width:50%;
+    padding:10px;
 }
 .col2{
     width:50%;
-    background: white;
+}
+.icon{
+    text-align:center;
+    margin-top:10px;
+}
+input[type=text],input[type="email"],input[type=number]{
+    padding:10px;
+    width:49%;
+    box-sizing: border-box;
+    margin-bottom:10px;
+}
+input[type=submit],input[type=reset]{
+    padding:10px;
+    width:49%;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top:8px;
+    background: rgb(173, 197, 207);
+    border:none;
+}
+.main{
+    height:90vh;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+ 
 }
 
-textarea{
-    margin-top:8px;
-    background: rgb(247, 239, 239);
-}
-.maps{
-    background:white;
-    height:485px;
-    width:650px;
-}
-a{
-    margin-left:20px;
-}
 h1{
     text-align:center;
+    color:black;
 }
-::placeholder{
-    font-size:17px;
-}
-label{
-    font-size:19px;
-}
-input[type=text],input[type=number],input[type=email]{
-    width:95%;
-    padding:10px;
-    box-sizing: border-box;
-    margin-top:10px;
-    background: rgb(248, 241, 241);
-}
-input[type=submit]{
-    margin-top:10px;
-    padding:10px;
-    width:100px;
-    background: green;
-    font-size:20px;
-    border:none;
-    cursor: pointer;
-    color:white;
-}
-
-.maps{
-   margin-left:10px;
-}
-@media(max-width:600px){
+@media(max-width:678px){
     .container{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
+         display:flex;
+         flex-direction:column;
+         
     }
-    .login{
-        width:80%;
-        height:145vh;
+    .col1{
+        width:97%;
     }
-    .maps{
-        width:83%;
+    .col2{
         margin-top:10px;
+        width:97%;
     }
     li a{
-       padding:10px;
-       font-size:10px;
+        padding:10px;
+        font-size:15px;
     }
     .logo{
-        width:100%;
-        font-size:20px;
+       font-size:20px;
     }
-   textarea{
-       width:96%;
-   }
-   iframe{
+    textarea{
+        overflow:auto;
+    }
+    textarea{
+        width:100%;
+    }
+   input[type=text],input[type=email],input[type=number],input[type=submit],input[type=reset]{
        width:100%;
    }
-   .content{
-       display:flex;
-       flex-wrap:wrap;
-   }
-   .col1{
-       width:100%;
-   }
-   .col2{
-       width:100%;
-   }
-   h1{
-       background: white;
-       margin:0;
-     
-   }
+  
+   
 }
+
+

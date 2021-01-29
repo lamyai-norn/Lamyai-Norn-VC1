@@ -38,6 +38,9 @@ li a{
     color:white;
     text-transform:uppercase;
 }
+li a:hover{
+    text-decoration:underline;
+}
 .container{
     margin-top:59px;
     height:100%;
@@ -88,6 +91,9 @@ input[type=button]{
     }
     h1{
         font-size:25px;
+    }
+    body{
+        background-position:center 60px;
     }
 }
 

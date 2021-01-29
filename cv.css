@@ -32,6 +32,9 @@ li a{
     color:white;
     text-transform:uppercase;
 }
+li a:hover{
+    text-decoration:underline;
+}
 .container{
     display:grid;
     grid-template-columns:0.5fr 0.5fr 0.5fr 0.5fr;
@@ -61,12 +64,13 @@ background: rgb(173, 197, 207);
     background-color: white;
     border: none;
     color: black;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
     border-radius:25px;
     text-align:center;
     outline:none;
+    text-decoration:none;
   }
   .download{
       text-align:center;
@@ -90,7 +94,7 @@ h1{
 }
 .about-me{
     width:60%;
-    height:15vh;
+    height:20vh;
     
 }
 .content2{
