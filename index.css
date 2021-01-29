@@ -93,7 +93,10 @@ input[type=button]{
         font-size:25px;
     }
     body{
-        background-position:center 60px;
+        background-position:center 60%;
+    }
+    nav ul{
+        display:flex;
     }
 }
 
